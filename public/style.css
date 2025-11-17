@@ -1,0 +1,177 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+/* Титульная страница */
+.title-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.title-content {
+    max-width: 800px;
+    width: 100%;
+}
+
+.title-content h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.title-content h2 {
+    font-size: 20px;
+}
+
+.student-info {
+    text-align: left;
+    display: inline-block;
+}
+
+/* Навигация */
+.main-nav {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+.nav-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.nav-button:hover {
+    background: #2980b9;
+}
+
+/* Секции с контентом */
+.content-section {
+    background: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 10px;
+    scroll-margin-top: 80px;
+}
+
+/* Секции с фоном */
+.content-section-ivan {
+    background-image: url('pics/hearts.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+    position: relative;
+}
+
+.content-section-ivan::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.content-section-nikita {
+    background-image: url('pics/sheep.png');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+    position: relative;
+}
+
+.content-section-nikita::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7); /* Увеличена интенсивность */
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.content-section-ivan > *,
+.content-section-nikita > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Заголовки */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin: 30px 0 15px;
+}
+
+/* Изображения */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Списки */
+ul {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* Ссылки */
+a {
+    display: inline-block;
+    margin: 5px 10px 5px 0;
+    padding: 10px 15px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background: #2980b9;
+}
+
+/* Параграфы */
+p {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
